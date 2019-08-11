@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ViewController.swift
 //  UserListApp
 //
 //  Created by 小野勇輔 on 2019/08/09.
@@ -8,23 +8,34 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ViewController: UIViewController {
+    
+    // 遷移元から受け取る値
+    var receiveNames: String = ""
+    var receiveHobbies: String = ""
+    
 
+    @IBOutlet weak var NameLabel: UILabel!
+    
+    
+    
+    @IBOutlet weak var FreeTextLabel: UILabel!
+    
+    
+    
+    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+      
+        
+        NameLabel.text = receiveNames
+        FreeTextLabel.text = receiveHobbies
+   
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+ 
+   
 
 }
